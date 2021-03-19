@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 import { User } from '../interfaces/user';
 import Wrapper from './Wrapper';
 
@@ -32,6 +33,12 @@ const Users = () => {
 
     return (
         <Wrapper>
+            <div className="pt3 pb-2 mb-3 border-bottom">
+                <div className="btn-toolbar mb-2 mb-md-0">
+                    <Link to={'/admin/users/create'} className ="btn btn-sm btn-outline-secondary"> Add</Link>
+                </div>
+
+            </div>
             <div className="table-responsive">
                 <table className="table table-striped table-sm">
                     <thead>
