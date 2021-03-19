@@ -7,6 +7,7 @@ import Users from './admin/Users';
 import { BrowserRouter, Route } from "react-router-dom"
 import Main from './main/Main';
 import CreateUser from './admin/CreateUser';
+import EditUser from './admin/EditUser';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/' exact component={Main} />
         <Route path='/admin/users' exact component={Users} />
         <Route path='/admin/users/create' exact component={CreateUser} />
+        <Route path='/admin/users/:id/edit' exact component={EditUser} />
       </BrowserRouter>
     </div>
   );
