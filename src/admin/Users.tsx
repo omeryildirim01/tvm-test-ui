@@ -34,10 +34,12 @@ const Users = () => {
     return (
         <Wrapper>
             <div className="pt3 pb-2 mb-3 border-bottom">
+                <label></label>
                 <div className="btn-toolbar mb-2 mb-md-0">
-                    <Link to={'/admin/users/create'} className ="btn btn-sm btn-outline-secondary"> Add</Link>
+                    <Link to={'/'} className ="btn btn-sm btn-outline-secondary"> Main Menu</Link>
+                    <span></span>
+                    <Link to={'/admin/users/create'} className ="btn btn-sm btn-outline-secondary"> Add New User</Link>
                 </div>
-
             </div>
             <div className="table-responsive">
                 <table className="table table-striped table-sm">
