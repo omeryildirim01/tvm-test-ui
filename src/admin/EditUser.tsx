@@ -56,32 +56,32 @@ const EditUser = (props: PropsWithRef<any>) => {
     return (
         <Wrapper>
             <div className="col-sm-6 col-md-8">
-            <div><label className="font-weight-bold">EDIT USER</label></div>
+            <div><label className="lead">EDIT USER</label></div>
                 <form onSubmit={submit}>
                     <div className="form-group">
                         <label>User Name</label>
-                        <input type="text" className="form-control" name="name"
+                        <input type="text" className="form-control" name="name" required
                             defaultValue={name}
                             onChange={e => setName(e.target.value)}
                         />
                     </div>
                     <div className="form-group">
                         <label>Phone</label>
-                        <input type="text" className="form-control" name="phone"
+                        <input type="text" className="form-control" name="phone" required
                             defaultValue={phone}
                             onChange={e => setPhone(e.target.value)}
                         />
                     </div>
                     <div className="form-group">
                         <label>Address</label>
-                        <input type="text" className="form-control" name="address"
+                        <input type="text" className="form-control" name="address" required
                             defaultValue={address}
                             onChange={e => setAddress(e.target.value)}
                         />
                     </div>
                     <div className="form-group">
                         <label>Email</label>
-                        <input type="text" className="form-control" name="email"
+                        <input type="text" className="form-control" name="email" required
                             defaultValue={email}
                             onChange={e => setEmail(e.target.value)}
                         />

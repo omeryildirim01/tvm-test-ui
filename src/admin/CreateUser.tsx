@@ -40,29 +40,29 @@ const CreateUser = () => {
     return (
         <Wrapper>
             <div className="col-sm-6 col-md-8">
-                <div><label className="font-weight-bold">CREATE A NEW USER</label></div>
+                <div><label className="lead">CREATE A NEW USER</label></div>
                 <form onSubmit={submit}>
                     <div className="form-group ">
                         <label>User Name</label>
-                        <input type="text" className="form-control" name="name"
+                        <input type="text" className="form-control" name="name" placeholder="name" required
                             onChange={e => setName(e.target.value)}
                         />
                     </div>
                     <div className="form-group">
                         <label>Phone</label>
-                        <input type="text" className="form-control" name="phone"
+                        <input type="text" className="form-control" name="phone" placeholder="phone" required
                             onChange={e => setPhone(e.target.value)}
                         />
                     </div>
                     <div className="form-group">
                         <label>Address</label>
-                        <input type="text" className="form-control" name="address"
+                        <input type="text" className="form-control" name="address" placeholder="address" required
                             onChange={e => setAddress(e.target.value)}
                         />
                     </div>
                     <div className="form-group">
                         <label>Email</label>
-                        <input type="text" className="form-control" name="email"
+                        <input type="text" className="form-control" name="email" placeholder="email" required
                             onChange={e => setEmail(e.target.value)}
                         />
                     </div>
